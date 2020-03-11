@@ -1,5 +1,5 @@
 local date = os.date('*t')
-local secondOfDay = (7 * 3600) + (30 * 60) + 0
+local secondOfDay = (0 * 3600) + (30 * 60) + 0
 local frozen = false
 
 RegisterServerEvent( "freezeTime" )

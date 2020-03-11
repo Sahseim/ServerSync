@@ -23,8 +23,8 @@
     ss_enable_door_window_sync = true
 
     -- Extra options if you don't already have these in other resources
-    ss_enable_police_ignore_player = true
-    ss_enable_no_wanted_level = true
+    ss_enable_police_ignore_player = false
+    ss_enable_no_wanted_level = false
     ss_enable_everyone_ignores_player = true
     ss_enable_random_cop_spawn = false -- This will set SetCreateRandomCopsNotOnScenarios and SetCreateRandomCops to what you picked.
     ss_enable_random_boat_spawn = true
@@ -57,7 +57,7 @@ ss_enable_dynamic_weather = true
 -- Default weather type for when the resource starts
 -- Options: EXTRASUNNY, CLEAR, NEUTRAL, SMOG, FOGGY, OVERCAST, CLOUDS, CLEARING, 
 -- Options: RAIN, THUNDER, SNOW, BLIZZARD, SNOWLIGHT, XMAS, HALLOWEEN
-ss_default_weather = "EXTRASUNNY"   
+ss_default_weather = "RAIN"   
 
 -- Weather timer (in minutes) between dynamic weather changes (Default: 10minutes)
 ss_weather_timer = 15
@@ -65,7 +65,7 @@ ss_weather_timer = 15
 ss_reduce_rain_chance = true
 
 -- Weather timeout for rain (in minutes). This means it can only rain once every X minutes - Default: 60 minutes)
-ss_rain_timeout = 45
+ss_rain_timeout = 20
 
 -- Weather transitions are configured here, pay attention to the example.
 -- Example: ["CurrentWeather"] = {"Next Possible Weather 1", "Next Possible Weather 2"}
@@ -91,7 +91,7 @@ ss_weather_Transition = {
 
 
 -- Wind Speed maximum. Default: Max = 2.00
-ss_wind_speed_max = 10.00
+ss_wind_speed_max = 4.00
 
 -- Effectiveness of Current Weather Wind Speed. 
 -- Default for Extrasunny is 0.5. This means that the max wind speed above is multiplied by 0.5 to get 1.0 wind speed
